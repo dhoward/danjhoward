@@ -234,3 +234,43 @@ ul, ol {
   float: left;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .main-content {
+    .main-column {
+      width: 100%;
+
+      &.left {
+        position: static;
+
+        .panel {
+          .bio {
+            padding: 0 0 0 0;
+            margin: 0 0 40px 0;
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main-header {
+    position: relative;
+
+    .name {
+      width: 100%;
+      text-align: left;
+    }
+
+    .info {
+      float: left;
+      margin: 4px 0 10px 0;
+    }
+  }
+
+  .main-content {
+    margin-top: 20px;
+  }
+}
